@@ -144,7 +144,7 @@ public void afterMethod( ITestResult result) throws IOException {
 
 	
 	  if (ITestResult.FAILURE == result.getStatus()){
-		  Utility.captureScreenshot(  driver ,testID);
+		  Utility.captureScreenshot(driver ,testID);
 	  }
 	
 	
