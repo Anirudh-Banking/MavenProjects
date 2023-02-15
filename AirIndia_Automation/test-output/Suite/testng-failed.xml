@@ -29,4 +29,20 @@
       </class> <!-- parallerExcution.AirIndiaTestNG2 -->
     </classes>
   </test> <!-- FirfoxTest(failed) -->
+  <test thread-count="3" parallel="tests" name="EdgeTest(failed)">
+    <parameter name="browser123" value="edge"/>
+    <classes>
+      <class name="parallerExcution.AirIndiaTestNG2">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="AirIndiaExpress5"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="creatPOMObjects"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- parallerExcution.AirIndiaTestNG2 -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
