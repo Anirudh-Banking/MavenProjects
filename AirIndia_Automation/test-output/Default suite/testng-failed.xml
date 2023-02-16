@@ -3,19 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="parallerExcution.AirIndiaTestNG1">
+      <class name="parallerExcution.AirIndiaTestNG2">
         <methods>
-          <include name="FlightTimeTableCheck2"/>
-          <include name="AirIndiaSearchFlight1"/>
-          <include name="creatPOMObject"/>
-          <include name="afterClass"/>
-          <include name="StudentConsessioanaryEligibility3"/>
-          <include name="afterTest"/>
           <include name="afterMethod"/>
-          <include name="launchBrowser"/>
+          <include name="afterTest"/>
+          <include name="AirIndiaExpress5"/>
+          <include name="afterClass"/>
           <include name="beforeMethod"/>
+          <include name="MulticityTravling4"/>
+          <include name="creatPOMObjects"/>
+          <include name="launchBrowser"/>
         </methods>
-      </class> <!-- parallerExcution.AirIndiaTestNG1 -->
+      </class> <!-- parallerExcution.AirIndiaTestNG2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

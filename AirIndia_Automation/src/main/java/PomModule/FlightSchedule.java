@@ -54,11 +54,11 @@ public class FlightSchedule {
 	public void sendFromDate(){
 		fromDate.sendKeys("25/02/2023");
 	}
-	public void sendFromSrc(){
-		fromSrc.sendKeys("Mumbai, Chhatrapati Shivaji International Airport, BOM, India");
+	public void sendFromSrc(String srcLocation){
+		fromSrc.sendKeys(srcLocation);
 	}
-	public void sendtToDesti(){
-		toDesti.sendKeys("Delhi, Indira Gandhi International Airport, DEL, India");
+	public void sendtToDesti(String destiLocation){
+		toDesti.sendKeys(destiLocation);
 	}
 	public void clickResetButton(){
 		resetButton.click();

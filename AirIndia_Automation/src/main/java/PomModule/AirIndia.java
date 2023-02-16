@@ -10,9 +10,6 @@ import org.openqa.selenium.support.ui.Select;
 
 public class AirIndia {
  
-	
-	
-	
 	private Actions act;
 	
 	@FindBy (xpath ="//input[@name='from']")
@@ -77,12 +74,12 @@ public class AirIndia {
 	}
 	
 	
-	public void sendSourceLocation(){
-		sourceLocation.sendKeys("Mumbai, Chhatrapati Shivaji International Airport, BOM, India, IN");
+	public void sendSourceLocation(String SourceLocation){
+		sourceLocation.sendKeys(SourceLocation);
 	}
 	
-	public void sendDestinationLocation() {
-		destinationLocation.sendKeys("Delhi, Indira Gandhi International Airport, DEL, India, IN");
+	public void sendDestinationLocation(String destiLocation) {
+		destinationLocation.sendKeys(destiLocation);
 	}
 	
 	public void selectConsetionaryType() {

@@ -48,24 +48,24 @@ public class MulticityStopover {
 	}
 	
 	
-	public void sendFromPune(){
-		 fromPune.sendKeys("Pune(PNQ)");
+	public void sendFromPune(String froPune){
+		 fromPune.sendKeys(froPune);
 	}
 	
-	public void sendToMumbai() {
-		 toMumbai.sendKeys("Mumbai(BOM)");
+	public void sendToMumbai(String tMumbai) {
+		 toMumbai.sendKeys(tMumbai);
 		 }
 
 	public void sendFirstDate() {
 		 firstDate.sendKeys("31/01/2023");	
 		 }
 
-	public void sendToDelhi() {
-		toDelhi.sendKeys("Delhi(DEL)");	
+	public void sendToDelhi(String tDelhi) {
+		toDelhi.sendKeys( tDelhi);	
 		}
 
-	public void sendToPune() {
-		 toPune.sendKeys("Pune(PNQ)");	
+	public void sendToPune(String tPune) {
+		 toPune.sendKeys( tPune);	
 		 }
 	
 	public void selectAdult() {

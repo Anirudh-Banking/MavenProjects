@@ -2,12 +2,13 @@ package Utils;
 
 import java.io.File;
 import java.io.FileInputStream;
-
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -36,8 +37,8 @@ public class Utility {
 		
 	}
 	
-	public static String getDataFromExel(String sheet , int row ,int cell) throws IOException  {
-		
+	public static String getDataFromExel(String sheet , int row ,int cell) throws EncryptedDocumentException, IOException  {
+
 		 String path ="C:\\Users\\DELL\\OneDrive\\Desktop\\New folder\\exele1.xlsx";
 		  
 		 InputStream File = new FileInputStream(path);
@@ -45,21 +46,28 @@ public class Utility {
 		 Sheet  sheet1 = book.getSheet(sheet);
 		 Row row1 = sheet1.getRow(row);
 		 Cell cell1  =	row1 .getCell(cell);
-		 String data = "";
+		 String data ;
+		 double value ;
 		try{
 			data= cell1.getStringCellValue();
 		}		  
-				
 		catch(IllegalStateException e){
-
-			Double value = cell1.getNumericCellValue();
-				
-			data = Double.toString(value );
-		}
+			
+			value=cell1.getNumericCellValue();
+			long lon =(long) value;
+			data=Long.toString(lon);
+			}
+		
 		return data ;
 	
 	}
 
+	
+	
+	
+	
+	
+	
 /*public static String readExcelData(String sheetName,int rowNo, int cellNo) throws EncryptedDocumentException, IOException
 {String path="C:\\Users\\USER\\Downloads\\TestDataEx.xlsx";//locate the file
 FileInputStream file=new FileInputStream(path);//open the file

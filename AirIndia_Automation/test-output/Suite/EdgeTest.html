@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Feb 15 11:16:39 EST 2023</td>
+<td>Started on:</td><td>Thu Feb 16 15:17:05 EST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>481 seconds (481191 ms)</td>
+<tr><td>Total time:</td><td>141 seconds (141371 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,55 +76,22 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='parallerExcution.AirIndiaTestNG2.AirIndiaExpress5()'><b>AirIndiaExpress5</b><br>Test class: parallerExcution.AirIndiaTestNG2</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 300.000
-  (Session info: MicrosoftEdge=109.0.1518.78)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-0CO46H2&apos;, ip: &apos;192.168.43.51&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2.1&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.78, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:58513}, msedge: {msedgedriverVersion: 109.0.1518.78 (4e4b32c38163..., userDataDir: C:\Users\DELL\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: db3f60c952392048442f12a926de3703
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-	at PomModule.AirIndia.clickAirIndiaExpress(AirIndia.java:148)
-	at parallerExcution.AirIndiaTestNG2.AirIndiaExpress5(AirIndiaTestNG2.java:105)
+<td><div><pre>java.lang.AssertionError: expected [Low Cost Airline In India | Book Cheap Flight Tickets Online] but found [Air India]
+	at parallerExcution.AirIndiaTestNG2.AirIndiaExpress5(AirIndiaTestNG2.java:117)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1471579421", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1471579421'><pre>org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 300.000
-  (Session info: MicrosoftEdge=109.0.1518.78)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-0CO46H2&apos;, ip: &apos;192.168.43.51&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2.1&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.78, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:58513}, msedge: {msedgedriverVersion: 109.0.1518.78 (4e4b32c38163..., userDataDir: C:\Users\DELL\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: db3f60c952392048442f12a926de3703
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-	at PomModule.AirIndia.clickAirIndiaExpress(AirIndia.java:148)
-	at parallerExcution.AirIndiaTestNG2.AirIndiaExpress5(AirIndiaTestNG2.java:105)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace667332994", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace667332994'><pre>java.lang.AssertionError: expected [Low Cost Airline In India | Book Cheap Flight Tickets Online] but found [Air India]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at parallerExcution.AirIndiaTestNG2.AirIndiaExpress5(AirIndiaTestNG2.java:117)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -147,8 +114,8 @@ Session ID: db3f60c952392048442f12a926de3703
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
-<td>300</td>
-<td>parallerExcution.AirIndiaTestNG2@3349e9bb</td></tr>
+<td>28</td>
+<td>parallerExcution.AirIndiaTestNG2@38d8f54a</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -158,25 +125,25 @@ Session ID: db3f60c952392048442f12a926de3703
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='parallerExcution.AirIndiaTestNG1.StudentConsessioanaryEligibility3()'><b>StudentConsessioanaryEligibility3</b><br>Test class: parallerExcution.AirIndiaTestNG1</td>
-<td></td>
-<td>17</td>
-<td>parallerExcution.AirIndiaTestNG1@3c19aaa5</td></tr>
-<tr>
-<td title='parallerExcution.AirIndiaTestNG1.AirIndiaSearchFlight1()'><b>AirIndiaSearchFlight1</b><br>Test class: parallerExcution.AirIndiaTestNG1</td>
-<td></td>
-<td>18</td>
-<td>parallerExcution.AirIndiaTestNG1@3c19aaa5</td></tr>
-<tr>
 <td title='parallerExcution.AirIndiaTestNG1.FlightTimeTableCheck2()'><b>FlightTimeTableCheck2</b><br>Test class: parallerExcution.AirIndiaTestNG1</td>
 <td></td>
-<td>19</td>
-<td>parallerExcution.AirIndiaTestNG1@3c19aaa5</td></tr>
+<td>10</td>
+<td>parallerExcution.AirIndiaTestNG1@409bf450</td></tr>
+<tr>
+<td title='parallerExcution.AirIndiaTestNG1.StudentConsessioanaryEligibility3()'><b>StudentConsessioanaryEligibility3</b><br>Test class: parallerExcution.AirIndiaTestNG1</td>
+<td></td>
+<td>13</td>
+<td>parallerExcution.AirIndiaTestNG1@409bf450</td></tr>
 <tr>
 <td title='parallerExcution.AirIndiaTestNG2.MulticityTravling4()'><b>MulticityTravling4</b><br>Test class: parallerExcution.AirIndiaTestNG2</td>
 <td></td>
-<td>26</td>
-<td>parallerExcution.AirIndiaTestNG2@3349e9bb</td></tr>
+<td>41</td>
+<td>parallerExcution.AirIndiaTestNG2@38d8f54a</td></tr>
+<tr>
+<td title='parallerExcution.AirIndiaTestNG1.AirIndiaSearchFlight1()'><b>AirIndiaSearchFlight1</b><br>Test class: parallerExcution.AirIndiaTestNG1</td>
+<td></td>
+<td>10</td>
+<td>parallerExcution.AirIndiaTestNG1@409bf450</td></tr>
 </table><p>
 </body>
 </html>

@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="3" parallel="tests" name="Failed suite [Failed suite [Suite]]" guice-stage="DEVELOPMENT">
-  <test thread-count="3" parallel="tests" name="FirfoxTest(failed)(failed)">
+<suite thread-count="3" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="tests" name="FirfoxTest(failed)">
     <parameter name="browser123" value="Firefox"/>
     <classes>
+      <class name="parallerExcution.AirIndiaTestNG2">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="AirIndiaExpress5"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="creatPOMObjects"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- parallerExcution.AirIndiaTestNG2 -->
       <class name="parallerExcution.AirIndiaTestNG1">
         <methods>
           <include name="FlightTimeTableCheck2"/>
@@ -16,20 +27,9 @@
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- parallerExcution.AirIndiaTestNG1 -->
-      <class name="parallerExcution.AirIndiaTestNG2">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="afterTest"/>
-          <include name="AirIndiaExpress5"/>
-          <include name="afterClass"/>
-          <include name="beforeMethod"/>
-          <include name="creatPOMObjects"/>
-          <include name="launchBrowser"/>
-        </methods>
-      </class> <!-- parallerExcution.AirIndiaTestNG2 -->
     </classes>
-  </test> <!-- FirfoxTest(failed)(failed) -->
-  <test thread-count="3" parallel="tests" name="EdgeTest(failed)(failed)">
+  </test> <!-- FirfoxTest(failed) -->
+  <test thread-count="3" parallel="tests" name="EdgeTest(failed)">
     <parameter name="browser123" value="edge"/>
     <classes>
       <class name="parallerExcution.AirIndiaTestNG2">
@@ -44,5 +44,5 @@
         </methods>
       </class> <!-- parallerExcution.AirIndiaTestNG2 -->
     </classes>
-  </test> <!-- EdgeTest(failed)(failed) -->
-</suite> <!-- Failed suite [Failed suite [Suite]] -->
+  </test> <!-- EdgeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

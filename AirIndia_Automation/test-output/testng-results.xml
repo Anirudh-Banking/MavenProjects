@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="7" passed="0" failed="4" skipped="0">
+<testng-results ignored="0" total="15" passed="11" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-15T11:39:22 EST" name="Failed suite [Suite]" finished-at="2023-02-15T11:45:14 EST" duration-ms="352844">
+  <suite started-at="2023-02-16T15:17:05 EST" name="Suite" finished-at="2023-02-16T15:19:26 EST" duration-ms="141371">
     <groups>
     </groups>
-    <test started-at="2023-02-15T11:39:22 EST" name="FirfoxTest(failed)" finished-at="2023-02-15T11:41:10 EST" duration-ms="107980">
+    <test started-at="2023-02-16T15:17:05 EST" name="FirfoxTest" finished-at="2023-02-16T15:18:28 EST" duration-ms="83549">
       <class name="parallerExcution.AirIndiaTestNG1">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:parallerExcution.AirIndiaTestNG1@4cc451f2]" started-at="2023-02-15T11:39:22 EST" name="launchBrowser" finished-at="2023-02-15T11:39:26 EST" duration-ms="4497" status="PASS">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:parallerExcution.AirIndiaTestNG1@6aeb35e6]" started-at="2023-02-16T15:17:05 EST" name="launchBrowser" finished-at="2023-02-16T15:17:13 EST" duration-ms="8526" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,31 +18,50 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="creatPOMObject()[pri:0, instance:parallerExcution.AirIndiaTestNG1@4cc451f2]" started-at="2023-02-15T11:40:34 EST" name="creatPOMObject" finished-at="2023-02-15T11:41:04 EST" duration-ms="30405" status="PASS">
+        <test-method is-config="true" signature="creatPOMObject()[pri:0, instance:parallerExcution.AirIndiaTestNG1@6aeb35e6]" started-at="2023-02-16T15:17:22 EST" name="creatPOMObject" finished-at="2023-02-16T15:17:35 EST" duration-ms="13259" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- creatPOMObject -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:parallerExcution.AirIndiaTestNG1@4cc451f2]" started-at="2023-02-15T11:41:04 EST" name="beforeMethod" finished-at="2023-02-15T11:41:04 EST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:parallerExcution.AirIndiaTestNG1@6aeb35e6]" started-at="2023-02-16T15:17:35 EST" name="beforeMethod" finished-at="2023-02-16T15:17:35 EST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="FlightTimeTableCheck2()[pri:1, instance:parallerExcution.AirIndiaTestNG1@4cc451f2]" started-at="2023-02-15T11:41:04 EST" name="FlightTimeTableCheck2" finished-at="2023-02-15T11:41:05 EST" duration-ms="1349" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
+        <test-method signature="AirIndiaSearchFlight1()[pri:0, instance:parallerExcution.AirIndiaTestNG1@6aeb35e6]" started-at="2023-02-16T15:17:35 EST" name="AirIndiaSearchFlight1" finished-at="2023-02-16T15:17:39 EST" duration-ms="3586" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AirIndiaSearchFlight1 -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:parallerExcution.AirIndiaTestNG1@6aeb35e6]" started-at="2023-02-16T15:17:39 EST" name="afterMethod" finished-at="2023-02-16T15:17:39 EST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AirIndiaSearchFlight1 status=SUCCESS method=AirIndiaTestNG1.AirIndiaSearchFlight1()[pri:0, instance:parallerExcution.AirIndiaTestNG1@6aeb35e6] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:parallerExcution.AirIndiaTestNG1@6aeb35e6]" started-at="2023-02-16T15:18:24 EST" name="beforeMethod" finished-at="2023-02-16T15:18:24 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="FlightTimeTableCheck2()[pri:1, instance:parallerExcution.AirIndiaTestNG1@6aeb35e6]" started-at="2023-02-16T15:18:24 EST" name="FlightTimeTableCheck2" finished-at="2023-02-16T15:18:24 EST" duration-ms="52" status="FAIL">
+          <exception class="org.openqa.selenium.interactions.MoveTargetOutOfBoundsException">
             <message>
-              <![CDATA[Element <input id="txtFromDate" class="form-control hasDatepicker" name="ctl00$ContentPlaceHolder1$BannerTabsForm$FlightStatusNew$txtFromDate" type="text"> is not reachable by keyboard
+              <![CDATA[(331, -218) is out of bounds of viewport width (1280) and height (595)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-0CO46H2', ip: '192.168.43.51', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 109.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230127170202, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 15152, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c627086c-0c6c-45fa-bae7-f9e3ab276d32]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 110.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230214051806, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 15820, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: da2d48c5-3415-4072-8e3c-fc17493b856c]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <input id="txtFromDate" class="form-control hasDatepicker" name="ctl00$ContentPlaceHolder1$BannerTabsForm$FlightStatusNew$txtFromDate" type="text"> is not reachable by keyboard
+              <![CDATA[org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: (331, -218) is out of bounds of viewport width (1280) and height (595)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-0CO46H2', ip: '192.168.43.51', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 109.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230127170202, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 15152, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c627086c-0c6c-45fa-bae7-f9e3ab276d32
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 110.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230214051806, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 15820, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: da2d48c5-3415-4072-8e3c-fc17493b856c
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -52,14 +71,10 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy17.sendKeys(Unknown Source)
-at PomModule.FlightSchedule.sendFromDate(FlightSchedule.java:55)
-at parallerExcution.AirIndiaTestNG1.FlightTimeTableCheck2(AirIndiaTestNG1.java:104)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+at PomModule.AirIndia.selectManage(AirIndia.java:127)
+at parallerExcution.AirIndiaTestNG1.FlightTimeTableCheck2(AirIndiaTestNG1.java:100)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -83,42 +98,38 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:833)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          </exception> <!-- org.openqa.selenium.interactions.MoveTargetOutOfBoundsException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FlightTimeTableCheck2 -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:parallerExcution.AirIndiaTestNG1@4cc451f2]" started-at="2023-02-15T11:41:05 EST" name="afterMethod" finished-at="2023-02-15T11:41:06 EST" duration-ms="494" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:parallerExcution.AirIndiaTestNG1@6aeb35e6]" started-at="2023-02-16T15:18:24 EST" name="afterMethod" finished-at="2023-02-16T15:18:24 EST" duration-ms="220" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=FlightTimeTableCheck2 status=FAILURE method=AirIndiaTestNG1.FlightTimeTableCheck2()[pri:1, instance:parallerExcution.AirIndiaTestNG1@4cc451f2] output={null}]]]>
+                <![CDATA[[TestResult name=FlightTimeTableCheck2 status=FAILURE method=AirIndiaTestNG1.FlightTimeTableCheck2()[pri:1, instance:parallerExcution.AirIndiaTestNG1@6aeb35e6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:parallerExcution.AirIndiaTestNG1@4cc451f2]" started-at="2023-02-15T11:41:06 EST" name="beforeMethod" finished-at="2023-02-15T11:41:06 EST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="StudentConsessioanaryEligibility3()[pri:2, instance:parallerExcution.AirIndiaTestNG1@4cc451f2]" started-at="2023-02-15T11:41:06 EST" name="StudentConsessioanaryEligibility3" finished-at="2023-02-15T11:41:06 EST" duration-ms="18" status="FAIL">
+        <test-method signature="StudentConsessioanaryEligibility3()[pri:2, instance:parallerExcution.AirIndiaTestNG1@6aeb35e6]" started-at="2023-02-16T15:18:24 EST" name="StudentConsessioanaryEligibility3" finished-at="2023-02-16T15:18:24 EST" duration-ms="15" status="FAIL">
           <exception class="org.openqa.selenium.interactions.MoveTargetOutOfBoundsException">
             <message>
-              <![CDATA[(408, -36) is out of bounds of viewport width (1280) and height (595)
+              <![CDATA[(408, -218) is out of bounds of viewport width (1280) and height (595)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-0CO46H2', ip: '192.168.43.51', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 109.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230127170202, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 15152, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c627086c-0c6c-45fa-bae7-f9e3ab276d32]]>
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 110.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230214051806, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 15820, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: da2d48c5-3415-4072-8e3c-fc17493b856c]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: (408, -36) is out of bounds of viewport width (1280) and height (595)
+              <![CDATA[org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: (408, -218) is out of bounds of viewport width (1280) and height (595)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-0CO46H2', ip: '192.168.43.51', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 109.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230127170202, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 15152, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: c627086c-0c6c-45fa-bae7-f9e3ab276d32
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 110.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230214051806, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 15820, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: da2d48c5-3415-4072-8e3c-fc17493b856c
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -130,8 +141,8 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
 at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
-at PomModule.AirIndia.selectOffers(AirIndia.java:138)
-at parallerExcution.AirIndiaTestNG1.StudentConsessioanaryEligibility3(AirIndiaTestNG1.java:127)
+at PomModule.AirIndia.selectOffers(AirIndia.java:135)
+at parallerExcution.AirIndiaTestNG1.StudentConsessioanaryEligibility3(AirIndiaTestNG1.java:128)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -159,28 +170,32 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StudentConsessioanaryEligibility3 -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:parallerExcution.AirIndiaTestNG1@4cc451f2]" started-at="2023-02-15T11:41:06 EST" name="afterMethod" finished-at="2023-02-15T11:41:06 EST" duration-ms="455" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:parallerExcution.AirIndiaTestNG1@6aeb35e6]" started-at="2023-02-16T15:18:24 EST" name="beforeMethod" finished-at="2023-02-16T15:18:24 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:parallerExcution.AirIndiaTestNG1@6aeb35e6]" started-at="2023-02-16T15:18:24 EST" name="afterMethod" finished-at="2023-02-16T15:18:24 EST" duration-ms="209" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=StudentConsessioanaryEligibility3 status=FAILURE method=AirIndiaTestNG1.StudentConsessioanaryEligibility3()[pri:2, instance:parallerExcution.AirIndiaTestNG1@4cc451f2] output={null}]]]>
+                <![CDATA[[TestResult name=StudentConsessioanaryEligibility3 status=FAILURE method=AirIndiaTestNG1.StudentConsessioanaryEligibility3()[pri:2, instance:parallerExcution.AirIndiaTestNG1@6aeb35e6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:parallerExcution.AirIndiaTestNG1@4cc451f2]" started-at="2023-02-15T11:41:06 EST" name="afterClass" finished-at="2023-02-15T11:41:06 EST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:parallerExcution.AirIndiaTestNG1@6aeb35e6]" started-at="2023-02-16T15:18:24 EST" name="afterClass" finished-at="2023-02-16T15:18:24 EST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:parallerExcution.AirIndiaTestNG1@4cc451f2]" started-at="2023-02-15T11:41:06 EST" name="afterTest" finished-at="2023-02-15T11:41:08 EST" duration-ms="1699" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:parallerExcution.AirIndiaTestNG1@6aeb35e6]" started-at="2023-02-16T15:18:24 EST" name="afterTest" finished-at="2023-02-16T15:18:26 EST" duration-ms="1736" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- parallerExcution.AirIndiaTestNG1 -->
       <class name="parallerExcution.AirIndiaTestNG2">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:parallerExcution.AirIndiaTestNG2@7ec7ffd3]" started-at="2023-02-15T11:39:26 EST" name="launchBrowser" finished-at="2023-02-15T11:39:30 EST" duration-ms="4289" status="PASS">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:parallerExcution.AirIndiaTestNG2@1283bb96]" started-at="2023-02-16T15:17:13 EST" name="launchBrowser" finished-at="2023-02-16T15:17:22 EST" duration-ms="8557" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -191,15 +206,34 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="creatPOMObjects()[pri:0, instance:parallerExcution.AirIndiaTestNG2@7ec7ffd3]" started-at="2023-02-15T11:39:30 EST" name="creatPOMObjects" finished-at="2023-02-15T11:40:18 EST" duration-ms="47291" status="PASS">
+        <test-method is-config="true" signature="creatPOMObjects()[pri:0, instance:parallerExcution.AirIndiaTestNG2@1283bb96]" started-at="2023-02-16T15:17:39 EST" name="creatPOMObjects" finished-at="2023-02-16T15:17:59 EST" duration-ms="20911" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- creatPOMObjects -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:parallerExcution.AirIndiaTestNG2@7ec7ffd3]" started-at="2023-02-15T11:40:18 EST" name="beforeMethod" finished-at="2023-02-15T11:40:18 EST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:parallerExcution.AirIndiaTestNG2@1283bb96]" started-at="2023-02-16T15:17:59 EST" name="beforeMethod" finished-at="2023-02-16T15:17:59 EST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="AirIndiaExpress5()[pri:1, instance:parallerExcution.AirIndiaTestNG2@7ec7ffd3]" started-at="2023-02-15T11:40:18 EST" name="AirIndiaExpress5" finished-at="2023-02-15T11:40:33 EST" duration-ms="15815" status="FAIL">
+        <test-method signature="MulticityTravling4()[pri:0, instance:parallerExcution.AirIndiaTestNG2@1283bb96]" started-at="2023-02-16T15:17:59 EST" name="MulticityTravling4" finished-at="2023-02-16T15:18:06 EST" duration-ms="6889" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MulticityTravling4 -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:parallerExcution.AirIndiaTestNG2@1283bb96]" started-at="2023-02-16T15:18:06 EST" name="afterMethod" finished-at="2023-02-16T15:18:06 EST" duration-ms="28" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=MulticityTravling4 status=SUCCESS method=AirIndiaTestNG2.MulticityTravling4()[pri:0, instance:parallerExcution.AirIndiaTestNG2@1283bb96] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:parallerExcution.AirIndiaTestNG2@1283bb96]" started-at="2023-02-16T15:18:06 EST" name="beforeMethod" finished-at="2023-02-16T15:18:06 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="AirIndiaExpress5()[pri:1, instance:parallerExcution.AirIndiaTestNG2@1283bb96]" started-at="2023-02-16T15:18:06 EST" name="AirIndiaExpress5" finished-at="2023-02-16T15:18:24 EST" duration-ms="17266" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Unable to locate element: //select[@id='departureCityDrop']
@@ -207,8 +241,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-0CO46H2', ip: '192.168.43.51', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 109.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230127170202, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 16212, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0de34de5-bc35-4342-a71e-5b10b64339aa
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 110.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230214051806, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12944, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4290e56a-716c-45ec-946f-82e20a2acd4f
 *** Element info: {Using=xpath, value=//select[@id='departureCityDrop']}]]>
             </message>
             <full-stacktrace>
@@ -217,8 +251,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-0CO46H2', ip: '192.168.43.51', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 109.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230127170202, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 16212, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0de34de5-bc35-4342-a71e-5b10b64339aa
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 110.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230214051806, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 12944, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 4290e56a-716c-45ec-946f-82e20a2acd4f
 *** Element info: {Using=xpath, value=//select[@id='departureCityDrop']}
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
@@ -238,7 +272,7 @@ at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invok
 at jdk.proxy2/jdk.proxy2.$Proxy17.getTagName(Unknown Source)
 at org.openqa.selenium.support.ui.Select.<init>(Select.java:45)
 at PomModule.LowCostAirlineInIndia.selectDepartureAiport(LowCostAirlineInIndia.java:35)
-at parallerExcution.AirIndiaTestNG2.AirIndiaExpress5(AirIndiaTestNG2.java:106)
+at parallerExcution.AirIndiaTestNG2.AirIndiaExpress5(AirIndiaTestNG2.java:103)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -266,30 +300,177 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AirIndiaExpress5 -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:parallerExcution.AirIndiaTestNG2@7ec7ffd3]" started-at="2023-02-15T11:40:34 EST" name="afterMethod" finished-at="2023-02-15T11:40:34 EST" duration-ms="116" status="PASS">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:parallerExcution.AirIndiaTestNG2@1283bb96]" started-at="2023-02-16T15:18:24 EST" name="afterMethod" finished-at="2023-02-16T15:18:24 EST" duration-ms="123" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=AirIndiaExpress5 status=FAILURE method=AirIndiaTestNG2.AirIndiaExpress5()[pri:1, instance:parallerExcution.AirIndiaTestNG2@7ec7ffd3] output={null}]]]>
+                <![CDATA[[TestResult name=AirIndiaExpress5 status=FAILURE method=AirIndiaTestNG2.AirIndiaExpress5()[pri:1, instance:parallerExcution.AirIndiaTestNG2@1283bb96] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:parallerExcution.AirIndiaTestNG2@7ec7ffd3]" started-at="2023-02-15T11:40:34 EST" name="afterClass" finished-at="2023-02-15T11:40:34 EST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:parallerExcution.AirIndiaTestNG2@1283bb96]" started-at="2023-02-16T15:18:24 EST" name="afterClass" finished-at="2023-02-16T15:18:24 EST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:parallerExcution.AirIndiaTestNG2@7ec7ffd3]" started-at="2023-02-15T11:41:08 EST" name="afterTest" finished-at="2023-02-15T11:41:10 EST" duration-ms="1518" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:parallerExcution.AirIndiaTestNG2@1283bb96]" started-at="2023-02-16T15:18:26 EST" name="afterTest" finished-at="2023-02-16T15:18:28 EST" duration-ms="2143" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- parallerExcution.AirIndiaTestNG2 -->
-    </test> <!-- FirfoxTest(failed) -->
-    <test started-at="2023-02-15T11:39:22 EST" name="EdgeTest(failed)" finished-at="2023-02-15T11:45:14 EST" duration-ms="352844">
+    </test> <!-- FirfoxTest -->
+    <test started-at="2023-02-16T15:17:05 EST" name="ChromeTest" finished-at="2023-02-16T15:19:26 EST" duration-ms="141262">
+      <class name="parallerExcution.AirIndiaTestNG1">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:parallerExcution.AirIndiaTestNG1@79924b]" started-at="2023-02-16T15:17:05 EST" name="launchBrowser" finished-at="2023-02-16T15:17:07 EST" duration-ms="2542" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="creatPOMObject()[pri:0, instance:parallerExcution.AirIndiaTestNG1@79924b]" started-at="2023-02-16T15:17:09 EST" name="creatPOMObject" finished-at="2023-02-16T15:17:26 EST" duration-ms="16211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- creatPOMObject -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:parallerExcution.AirIndiaTestNG1@79924b]" started-at="2023-02-16T15:17:26 EST" name="beforeMethod" finished-at="2023-02-16T15:17:26 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="AirIndiaSearchFlight1()[pri:0, instance:parallerExcution.AirIndiaTestNG1@79924b]" started-at="2023-02-16T15:17:26 EST" name="AirIndiaSearchFlight1" finished-at="2023-02-16T15:17:38 EST" duration-ms="12253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AirIndiaSearchFlight1 -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:parallerExcution.AirIndiaTestNG1@79924b]" started-at="2023-02-16T15:17:38 EST" name="afterMethod" finished-at="2023-02-16T15:17:38 EST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AirIndiaSearchFlight1 status=SUCCESS method=AirIndiaTestNG1.AirIndiaSearchFlight1()[pri:0, instance:parallerExcution.AirIndiaTestNG1@79924b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:parallerExcution.AirIndiaTestNG1@79924b]" started-at="2023-02-16T15:19:03 EST" name="beforeMethod" finished-at="2023-02-16T15:19:03 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="FlightTimeTableCheck2()[pri:1, instance:parallerExcution.AirIndiaTestNG1@79924b]" started-at="2023-02-16T15:19:03 EST" name="FlightTimeTableCheck2" finished-at="2023-02-16T15:19:14 EST" duration-ms="10234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FlightTimeTableCheck2 -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:parallerExcution.AirIndiaTestNG1@79924b]" started-at="2023-02-16T15:19:14 EST" name="afterMethod" finished-at="2023-02-16T15:19:14 EST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=FlightTimeTableCheck2 status=SUCCESS method=AirIndiaTestNG1.FlightTimeTableCheck2()[pri:1, instance:parallerExcution.AirIndiaTestNG1@79924b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:parallerExcution.AirIndiaTestNG1@79924b]" started-at="2023-02-16T15:19:14 EST" name="beforeMethod" finished-at="2023-02-16T15:19:14 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="StudentConsessioanaryEligibility3()[pri:2, instance:parallerExcution.AirIndiaTestNG1@79924b]" started-at="2023-02-16T15:19:14 EST" name="StudentConsessioanaryEligibility3" finished-at="2023-02-16T15:19:25 EST" duration-ms="11403" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StudentConsessioanaryEligibility3 -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:parallerExcution.AirIndiaTestNG1@79924b]" started-at="2023-02-16T15:19:25 EST" name="afterMethod" finished-at="2023-02-16T15:19:25 EST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=StudentConsessioanaryEligibility3 status=SUCCESS method=AirIndiaTestNG1.StudentConsessioanaryEligibility3()[pri:2, instance:parallerExcution.AirIndiaTestNG1@79924b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:parallerExcution.AirIndiaTestNG1@79924b]" started-at="2023-02-16T15:19:25 EST" name="afterTest" finished-at="2023-02-16T15:19:25 EST" duration-ms="358" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:parallerExcution.AirIndiaTestNG1@79924b]" started-at="2023-02-16T15:19:25 EST" name="afterClass" finished-at="2023-02-16T15:19:25 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- parallerExcution.AirIndiaTestNG1 -->
       <class name="parallerExcution.AirIndiaTestNG2">
-        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:parallerExcution.AirIndiaTestNG2@409bf450]" started-at="2023-02-15T11:39:22 EST" name="launchBrowser" finished-at="2023-02-15T11:39:26 EST" duration-ms="3944" status="PASS">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:parallerExcution.AirIndiaTestNG2@1aa7ecca]" started-at="2023-02-16T15:17:07 EST" name="launchBrowser" finished-at="2023-02-16T15:17:09 EST" duration-ms="2216" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="creatPOMObjects()[pri:0, instance:parallerExcution.AirIndiaTestNG2@1aa7ecca]" started-at="2023-02-16T15:17:38 EST" name="creatPOMObjects" finished-at="2023-02-16T15:17:54 EST" duration-ms="16166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- creatPOMObjects -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:parallerExcution.AirIndiaTestNG2@1aa7ecca]" started-at="2023-02-16T15:17:54 EST" name="beforeMethod" finished-at="2023-02-16T15:17:54 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="MulticityTravling4()[pri:0, instance:parallerExcution.AirIndiaTestNG2@1aa7ecca]" started-at="2023-02-16T15:17:54 EST" name="MulticityTravling4" finished-at="2023-02-16T15:18:33 EST" duration-ms="38711" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MulticityTravling4 -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:parallerExcution.AirIndiaTestNG2@1aa7ecca]" started-at="2023-02-16T15:18:33 EST" name="afterMethod" finished-at="2023-02-16T15:18:33 EST" duration-ms="107" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=MulticityTravling4 status=SUCCESS method=AirIndiaTestNG2.MulticityTravling4()[pri:0, instance:parallerExcution.AirIndiaTestNG2@1aa7ecca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:parallerExcution.AirIndiaTestNG2@1aa7ecca]" started-at="2023-02-16T15:18:33 EST" name="beforeMethod" finished-at="2023-02-16T15:18:33 EST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="AirIndiaExpress5()[pri:1, instance:parallerExcution.AirIndiaTestNG2@1aa7ecca]" started-at="2023-02-16T15:18:33 EST" name="AirIndiaExpress5" finished-at="2023-02-16T15:19:03 EST" duration-ms="30542" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AirIndiaExpress5 -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:parallerExcution.AirIndiaTestNG2@1aa7ecca]" started-at="2023-02-16T15:19:03 EST" name="afterMethod" finished-at="2023-02-16T15:19:03 EST" duration-ms="10" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AirIndiaExpress5 status=SUCCESS method=AirIndiaTestNG2.AirIndiaExpress5()[pri:1, instance:parallerExcution.AirIndiaTestNG2@1aa7ecca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:parallerExcution.AirIndiaTestNG2@1aa7ecca]" started-at="2023-02-16T15:19:03 EST" name="afterClass" finished-at="2023-02-16T15:19:03 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:parallerExcution.AirIndiaTestNG2@1aa7ecca]" started-at="2023-02-16T15:19:25 EST" name="afterTest" finished-at="2023-02-16T15:19:26 EST" duration-ms="445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- parallerExcution.AirIndiaTestNG2 -->
+    </test> <!-- ChromeTest -->
+    <test started-at="2023-02-16T15:17:05 EST" name="EdgeTest" finished-at="2023-02-16T15:19:26 EST" duration-ms="141371">
+      <class name="parallerExcution.AirIndiaTestNG1">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:parallerExcution.AirIndiaTestNG1@409bf450]" started-at="2023-02-16T15:17:05 EST" name="launchBrowser" finished-at="2023-02-16T15:17:09 EST" duration-ms="4109" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -300,50 +481,125 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="creatPOMObjects()[pri:0, instance:parallerExcution.AirIndiaTestNG2@409bf450]" started-at="2023-02-15T11:39:26 EST" name="creatPOMObjects" finished-at="2023-02-15T11:40:13 EST" duration-ms="47250" status="PASS">
+        <test-method is-config="true" signature="creatPOMObject()[pri:0, instance:parallerExcution.AirIndiaTestNG1@409bf450]" started-at="2023-02-16T15:17:15 EST" name="creatPOMObject" finished-at="2023-02-16T15:17:27 EST" duration-ms="12705" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- creatPOMObjects -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:parallerExcution.AirIndiaTestNG2@409bf450]" started-at="2023-02-15T11:40:13 EST" name="beforeMethod" finished-at="2023-02-15T11:40:13 EST" duration-ms="6" status="PASS">
+        </test-method> <!-- creatPOMObject -->
+        <test-method signature="AirIndiaSearchFlight1()[pri:0, instance:parallerExcution.AirIndiaTestNG1@409bf450]" started-at="2023-02-16T15:17:27 EST" name="AirIndiaSearchFlight1" finished-at="2023-02-16T15:17:38 EST" duration-ms="10431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AirIndiaSearchFlight1 -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:parallerExcution.AirIndiaTestNG1@409bf450]" started-at="2023-02-16T15:17:27 EST" name="beforeMethod" finished-at="2023-02-16T15:17:27 EST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="AirIndiaExpress5()[pri:1, instance:parallerExcution.AirIndiaTestNG2@409bf450]" started-at="2023-02-15T11:40:13 EST" name="AirIndiaExpress5" finished-at="2023-02-15T11:45:13 EST" duration-ms="300333" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:parallerExcution.AirIndiaTestNG1@409bf450]" started-at="2023-02-16T15:17:38 EST" name="afterMethod" finished-at="2023-02-16T15:17:38 EST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AirIndiaSearchFlight1 status=SUCCESS method=AirIndiaTestNG1.AirIndiaSearchFlight1()[pri:0, instance:parallerExcution.AirIndiaTestNG1@409bf450] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="FlightTimeTableCheck2()[pri:1, instance:parallerExcution.AirIndiaTestNG1@409bf450]" started-at="2023-02-16T15:19:02 EST" name="FlightTimeTableCheck2" finished-at="2023-02-16T15:19:12 EST" duration-ms="10015" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FlightTimeTableCheck2 -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:parallerExcution.AirIndiaTestNG1@409bf450]" started-at="2023-02-16T15:19:02 EST" name="beforeMethod" finished-at="2023-02-16T15:19:02 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:parallerExcution.AirIndiaTestNG1@409bf450]" started-at="2023-02-16T15:19:12 EST" name="afterMethod" finished-at="2023-02-16T15:19:12 EST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=FlightTimeTableCheck2 status=SUCCESS method=AirIndiaTestNG1.FlightTimeTableCheck2()[pri:1, instance:parallerExcution.AirIndiaTestNG1@409bf450] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="StudentConsessioanaryEligibility3()[pri:2, instance:parallerExcution.AirIndiaTestNG1@409bf450]" started-at="2023-02-16T15:19:12 EST" name="StudentConsessioanaryEligibility3" finished-at="2023-02-16T15:19:25 EST" duration-ms="13099" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StudentConsessioanaryEligibility3 -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:parallerExcution.AirIndiaTestNG1@409bf450]" started-at="2023-02-16T15:19:12 EST" name="beforeMethod" finished-at="2023-02-16T15:19:12 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:parallerExcution.AirIndiaTestNG1@409bf450]" started-at="2023-02-16T15:19:25 EST" name="afterMethod" finished-at="2023-02-16T15:19:25 EST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=StudentConsessioanaryEligibility3 status=SUCCESS method=AirIndiaTestNG1.StudentConsessioanaryEligibility3()[pri:2, instance:parallerExcution.AirIndiaTestNG1@409bf450] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:parallerExcution.AirIndiaTestNG1@409bf450]" started-at="2023-02-16T15:19:25 EST" name="afterTest" finished-at="2023-02-16T15:19:25 EST" duration-ms="696" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:parallerExcution.AirIndiaTestNG1@409bf450]" started-at="2023-02-16T15:19:25 EST" name="afterClass" finished-at="2023-02-16T15:19:25 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- parallerExcution.AirIndiaTestNG1 -->
+      <class name="parallerExcution.AirIndiaTestNG2">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:parallerExcution.AirIndiaTestNG2@38d8f54a]" started-at="2023-02-16T15:17:09 EST" name="launchBrowser" finished-at="2023-02-16T15:17:15 EST" duration-ms="5868" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="creatPOMObjects()[pri:0, instance:parallerExcution.AirIndiaTestNG2@38d8f54a]" started-at="2023-02-16T15:17:38 EST" name="creatPOMObjects" finished-at="2023-02-16T15:17:52 EST" duration-ms="14097" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- creatPOMObjects -->
+        <test-method signature="MulticityTravling4()[pri:0, instance:parallerExcution.AirIndiaTestNG2@38d8f54a]" started-at="2023-02-16T15:17:52 EST" name="MulticityTravling4" finished-at="2023-02-16T15:18:33 EST" duration-ms="41210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MulticityTravling4 -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:parallerExcution.AirIndiaTestNG2@38d8f54a]" started-at="2023-02-16T15:17:52 EST" name="beforeMethod" finished-at="2023-02-16T15:17:52 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:parallerExcution.AirIndiaTestNG2@38d8f54a]" started-at="2023-02-16T15:18:33 EST" name="afterMethod" finished-at="2023-02-16T15:18:33 EST" duration-ms="262" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=MulticityTravling4 status=SUCCESS method=AirIndiaTestNG2.MulticityTravling4()[pri:0, instance:parallerExcution.AirIndiaTestNG2@38d8f54a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="AirIndiaExpress5()[pri:1, instance:parallerExcution.AirIndiaTestNG2@38d8f54a]" started-at="2023-02-16T15:18:33 EST" name="AirIndiaExpress5" finished-at="2023-02-16T15:19:01 EST" duration-ms="28009" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[timeout: Timed out receiving message from renderer: 300.000
-  (Session info: MicrosoftEdge=109.0.1518.78)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-0CO46H2', ip: '192.168.43.51', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.78, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59617}, msedge: {msedgedriverVersion: 109.0.1518.78 (4e4b32c38163..., userDataDir: C:\Users\DELL\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 88a9d1a5aac69b1847132810b63e8c08]]>
+              <![CDATA[expected [Low Cost Airline In India | Book Cheap Flight Tickets Online] but found [Air India]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 300.000
-  (Session info: MicrosoftEdge=109.0.1518.78)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-0CO46H2', ip: '192.168.43.51', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.78, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:59617}, msedge: {msedgedriverVersion: 109.0.1518.78 (4e4b32c38163..., userDataDir: C:\Users\DELL\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 88a9d1a5aac69b1847132810b63e8c08
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-at PomModule.AirIndia.clickAirIndiaExpress(AirIndia.java:148)
-at parallerExcution.AirIndiaTestNG2.AirIndiaExpress5(AirIndiaTestNG2.java:105)
+              <![CDATA[java.lang.AssertionError: expected [Low Cost Airline In India | Book Cheap Flight Tickets Online] but found [Air India]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at parallerExcution.AirIndiaTestNG2.AirIndiaExpress5(AirIndiaTestNG2.java:117)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:577)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -367,30 +623,34 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:833)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AirIndiaExpress5 -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:parallerExcution.AirIndiaTestNG2@409bf450]" started-at="2023-02-15T11:45:13 EST" name="afterMethod" finished-at="2023-02-15T11:45:14 EST" duration-ms="781" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:parallerExcution.AirIndiaTestNG2@38d8f54a]" started-at="2023-02-16T15:18:33 EST" name="beforeMethod" finished-at="2023-02-16T15:18:33 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:parallerExcution.AirIndiaTestNG2@38d8f54a]" started-at="2023-02-16T15:19:01 EST" name="afterMethod" finished-at="2023-02-16T15:19:02 EST" duration-ms="260" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=AirIndiaExpress5 status=FAILURE method=AirIndiaTestNG2.AirIndiaExpress5()[pri:1, instance:parallerExcution.AirIndiaTestNG2@409bf450] output={null}]]]>
+                <![CDATA[[TestResult name=AirIndiaExpress5 status=FAILURE method=AirIndiaTestNG2.AirIndiaExpress5()[pri:1, instance:parallerExcution.AirIndiaTestNG2@38d8f54a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:parallerExcution.AirIndiaTestNG2@409bf450]" started-at="2023-02-15T11:45:14 EST" name="afterClass" finished-at="2023-02-15T11:45:14 EST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:parallerExcution.AirIndiaTestNG2@38d8f54a]" started-at="2023-02-16T15:19:02 EST" name="afterClass" finished-at="2023-02-16T15:19:02 EST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:parallerExcution.AirIndiaTestNG2@409bf450]" started-at="2023-02-15T11:45:14 EST" name="afterTest" finished-at="2023-02-15T11:45:14 EST" duration-ms="443" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:parallerExcution.AirIndiaTestNG2@38d8f54a]" started-at="2023-02-16T15:19:25 EST" name="afterTest" finished-at="2023-02-16T15:19:26 EST" duration-ms="554" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- parallerExcution.AirIndiaTestNG2 -->
-    </test> <!-- EdgeTest(failed) -->
-  </suite> <!-- Failed suite [Suite] -->
+    </test> <!-- EdgeTest -->
+  </suite> <!-- Suite -->
 </testng-results>

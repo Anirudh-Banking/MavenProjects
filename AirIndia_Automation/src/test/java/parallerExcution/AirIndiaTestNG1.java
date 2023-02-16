@@ -3,6 +3,7 @@ package parallerExcution;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.WebDriver;
 
 import org.testng.Assert;
@@ -65,14 +66,14 @@ public void creatPOMObject() {
 	driver.get("https://www.airindia.in");
 }
 @BeforeMethod
-public void beforeMethod() {
-	
+public void beforeMethod() throws EncryptedDocumentException, IOException {
+
 }
 @Test 
-public void AirIndiaSearchFlight1() {
+public void AirIndiaSearchFlight1() throws EncryptedDocumentException, IOException  {
 	testID = "101";
-  	airIndia.sendSourceLocation();
-  	airIndia.sendDestinationLocation();
+  	airIndia.sendSourceLocation(Utility.getDataFromExel("AirIndia", 1, 8));
+  	airIndia.sendDestinationLocation(Utility.getDataFromExel("AirIndia", 2, 8));
   	airIndia.selectConsetionaryType();
   	airIndia.selectAdultDropDown();
   	airIndia.selectChildrenDropDown();
@@ -94,7 +95,7 @@ public void AirIndiaSearchFlight1() {
 }
 
 @Test(priority =1)
-public void FlightTimeTableCheck2() {
+public void FlightTimeTableCheck2() throws EncryptedDocumentException, IOException {
 	testID = "102";
 	airIndia.selectManage();
   	airIndia.selectFlightTimetable();
@@ -102,15 +103,15 @@ public void FlightTimeTableCheck2() {
   
   	flightSchedule.clickOneWaybutton();
   	flightSchedule.sendFromDate();
-  	flightSchedule.sendFromSrc();
-  	flightSchedule.sendtToDesti();
+  	flightSchedule.sendFromSrc(Utility.getDataFromExel("AirIndia", 4, 8));
+  	flightSchedule.sendtToDesti(Utility.getDataFromExel("AirIndia", 5, 8));
   	flightSchedule.clickResetButton();
   	
   	flightSchedule.clickRoadTripButton();
   	flightSchedule.sendFromDate();
   	flightSchedule.sendToDate();
-  	flightSchedule.sendFromSrc();
-  	flightSchedule.sendtToDesti();
+  	flightSchedule.sendFromSrc(Utility.getDataFromExel("AirIndia", 4, 8));
+  	flightSchedule.sendtToDesti(Utility.getDataFromExel("AirIndia", 5, 8));
   //	flightSchedule.clickSubmitButton();
 	
 	String ActualTitle = driver.getTitle();

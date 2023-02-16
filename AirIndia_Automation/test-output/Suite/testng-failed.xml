@@ -4,6 +4,17 @@
   <test thread-count="3" parallel="tests" name="FirfoxTest(failed)">
     <parameter name="browser123" value="Firefox"/>
     <classes>
+      <class name="parallerExcution.AirIndiaTestNG2">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="AirIndiaExpress5"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="creatPOMObjects"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- parallerExcution.AirIndiaTestNG2 -->
       <class name="parallerExcution.AirIndiaTestNG1">
         <methods>
           <include name="FlightTimeTableCheck2"/>
@@ -16,17 +27,6 @@
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- parallerExcution.AirIndiaTestNG1 -->
-      <class name="parallerExcution.AirIndiaTestNG2">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="afterTest"/>
-          <include name="AirIndiaExpress5"/>
-          <include name="afterClass"/>
-          <include name="beforeMethod"/>
-          <include name="creatPOMObjects"/>
-          <include name="launchBrowser"/>
-        </methods>
-      </class> <!-- parallerExcution.AirIndiaTestNG2 -->
     </classes>
   </test> <!-- FirfoxTest(failed) -->
   <test thread-count="3" parallel="tests" name="EdgeTest(failed)">

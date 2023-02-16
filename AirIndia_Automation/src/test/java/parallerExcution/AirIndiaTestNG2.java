@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.WebDriver;
 
 import org.testng.Assert;
@@ -63,13 +64,9 @@ public void creatPOMObjects() {
 @BeforeMethod
 public void beforeMethod() {
 
-  
-
 }
-
-
 @Test 
-public void MulticityTravling4() {
+public void MulticityTravling4() throws EncryptedDocumentException, IOException  {
 	testID = "104";
 	airIndia.clickMultiCity();
   	
@@ -77,11 +74,11 @@ public void MulticityTravling4() {
 	 driver.switchTo().window(addr.get(1));
 	 
 	
-	 multicityStopover.sendFromPune();
-	 multicityStopover.sendToMumbai();
+	 multicityStopover.sendFromPune(Utility.getDataFromExel("AirIndia", 11, 8));
+	 multicityStopover.sendToMumbai(Utility.getDataFromExel("AirIndia", 12, 8));
 	 multicityStopover.sendFirstDate();
-	 multicityStopover.sendToDelhi();
-	 multicityStopover.sendToPune();
+	 multicityStopover.sendToDelhi(Utility.getDataFromExel("AirIndia", 13, 8));
+	 multicityStopover.sendToPune(Utility.getDataFromExel("AirIndia", 11, 8));
 	 multicityStopover.selectAdult();
 	 multicityStopover.selectChildren();
 	 multicityStopover.selectInfant();
