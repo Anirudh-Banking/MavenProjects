@@ -1,18 +1,21 @@
 package AirIndiaPackage;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import PomModule.AirIndia;
 
 import PomModule.MulticityStopover;
+import Utils.Utility;
 
 public class MulticityTravling4 {
 
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) throws InterruptedException, EncryptedDocumentException, IOException {
 	System.setProperty("webdriver.chrome.driver","C:\\Users\\DELL\\Downloads\\softwere testing\\automation\\selenium\\chromedriver_win32\\chromedriver.exe");		
 	WebDriver driver = new ChromeDriver();
 	driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -27,11 +30,11 @@ public class MulticityTravling4 {
 	 driver.switchTo().window(addr.get(1));
 	 
 	 MulticityStopover multicityStopover   = new MulticityStopover(driver);
-	 multicityStopover.sendFromPune();
-	 multicityStopover.sendToMumbai();
+	 multicityStopover.sendFromPune(Utility.getDataFromExel("AirIndia", 11, 8));
+	 multicityStopover.sendToMumbai(Utility.getDataFromExel("AirIndia", 12, 8));
 	 multicityStopover.sendFirstDate();
-	 multicityStopover.sendToDelhi();
-	 multicityStopover.sendToPune();
+	 multicityStopover.sendToDelhi(Utility.getDataFromExel("AirIndia", 13, 8));
+	 multicityStopover.sendToPune(Utility.getDataFromExel("AirIndia", 11, 8));
 	 multicityStopover.selectAdult();
 	 multicityStopover.selectChildren();
 	 multicityStopover.selectInfant();

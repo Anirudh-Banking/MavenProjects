@@ -1,8 +1,10 @@
 package TestNGPack;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
@@ -14,6 +16,7 @@ import org.testng.annotations.Test;
 import PomModule.AirIndia;
 import PomModule.LowCostAirlineInIndia;
 import PomModule.MulticityStopover;
+import Utils.Utility;
 
 public class TestClassTestNG2 {
 	private WebDriver driver;
@@ -38,7 +41,7 @@ public class TestClassTestNG2 {
 	}
 	
 	@Test 
-	public void MulticityTravling4() {
+	public void MulticityTravling4() throws EncryptedDocumentException, IOException {
 		System.out.println("test1");
 
 	  	AirIndia airIndia  =new AirIndia(driver);
@@ -48,11 +51,11 @@ public class TestClassTestNG2 {
 		 driver.switchTo().window(addr.get(1));
 		 
 		 MulticityStopover multicityStopover   = new MulticityStopover(driver);
-		 multicityStopover.sendFromPune();
-		 multicityStopover.sendToMumbai();
+		 multicityStopover.sendFromPune(Utility.getDataFromExel("AirIndia", 11, 8));
+		 multicityStopover.sendToMumbai(Utility.getDataFromExel("AirIndia", 12, 8));
 		 multicityStopover.sendFirstDate();
-		 multicityStopover.sendToDelhi();
-		 multicityStopover.sendToPune();
+		 multicityStopover.sendToDelhi(Utility.getDataFromExel("AirIndia", 13, 8));
+		 multicityStopover.sendToPune(Utility.getDataFromExel("AirIndia", 11, 8));
 		 multicityStopover.selectAdult();
 		 multicityStopover.selectChildren();
 		 multicityStopover.selectInfant();

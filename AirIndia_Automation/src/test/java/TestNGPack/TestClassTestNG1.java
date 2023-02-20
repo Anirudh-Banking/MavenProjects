@@ -1,8 +1,10 @@
 package TestNGPack;
 
 
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
@@ -16,6 +18,7 @@ import PomModule.ConcesionaryFare;
 import PomModule.FlightSchedule;
 
 import PomModule.SpecialOffersAirIndia;
+import Utils.Utility;
 
 public class TestClassTestNG1 {
 
@@ -38,12 +41,12 @@ public class TestClassTestNG1 {
 	}
 	
 	@Test 
-	public void AirIndiaSearchFlight1() {
+	public void AirIndiaSearchFlight1() throws EncryptedDocumentException, IOException {
 		System.out.println("Test");
 
 	  	AirIndia airIndia =new AirIndia(driver);
-	  	airIndia.sendSourceLocation();
-	  	airIndia.sendDestinationLocation();
+	  	airIndia.sendSourceLocation(Utility.getDataFromExel("AirIndia", 1, 8));
+	  	airIndia.sendDestinationLocation(Utility.getDataFromExel("AirIndia", 2, 8));
 	  	airIndia.selectConsetionaryType();
 	  	airIndia.selectAdultDropDown();
 	  	airIndia.selectChildrenDropDown();
@@ -73,7 +76,7 @@ public class TestClassTestNG1 {
 	}
 	
 	@Test(priority =1)
-	public void FlightTimeTableCheck2() {
+	public void FlightTimeTableCheck2() throws EncryptedDocumentException, IOException {
 		System.out.println("test2");
 
 	  	AirIndia airIndia =new AirIndia (driver);
@@ -83,15 +86,15 @@ public class TestClassTestNG1 {
 	  	FlightSchedule flightSchedule = new FlightSchedule(driver);
 	  	flightSchedule.clickOneWaybutton();
 	  	flightSchedule.sendFromDate();
-	  	flightSchedule.sendFromSrc();
-	  	flightSchedule.sendtToDesti();
+	  	flightSchedule.sendFromSrc(Utility.getDataFromExel("AirIndia", 4, 8));
+	  	flightSchedule.sendtToDesti(Utility.getDataFromExel("AirIndia", 5, 8));
 	  	flightSchedule.clickResetButton();
 	  	
 	  	flightSchedule.clickRoadTripButton();
 	  	flightSchedule.sendFromDate();
 	  	flightSchedule.sendToDate();
-	  	flightSchedule.sendFromSrc();
-	  	flightSchedule.sendtToDesti();
+	  	flightSchedule.sendFromSrc(Utility.getDataFromExel("AirIndia", 4, 8));
+	  	flightSchedule.sendtToDesti(Utility.getDataFromExel("AirIndia", 5, 8));
 	  	flightSchedule.clickSubmitButton();
 		
 

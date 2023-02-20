@@ -9,20 +9,20 @@ public class Browser {
 
 	public static WebDriver openChromeBrowser() {
 
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\DELL\\Downloads\\softwere testing\\automation\\selenium\\chromedriver_win32\\chromedriver.exe");		
+		System.setProperty("webdriver.chrome.driver","src/test/resources/browser/chromedriver.exe");		
 		 WebDriver driver = new ChromeDriver();
 		return driver;
 	}
 	
 	public static WebDriver openFirefoxBrowser() {
 	
-		System.setProperty("webdriver.gecko.driver","C:\\Users\\DELL\\Downloads\\softwere testing\\automation\\selenium\\geckodriver-v0.32.0-win32\\geckodriver.exe" );
+		System.setProperty("webdriver.gecko.driver","src/test/resources/browser/geckodriver.exe" );
 		 WebDriver driver = new FirefoxDriver();
 		return driver;
 	}
 	public static WebDriver openEdgeBrowser() {
 		
-		System.setProperty("webdriver.edge.driver","C:\\Users\\DELL\\Downloads\\softwere testing\\automation\\selenium\\edgedriver_win64 (1)\\msedgedriver.exe");
+		System.setProperty("webdriver.edge.driver","src/test/resources/browser/msedgedriver.exe");
 		 WebDriver driver = new EdgeDriver();
 		return driver;
 	}

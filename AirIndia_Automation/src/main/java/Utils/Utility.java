@@ -31,7 +31,7 @@ public class Utility {
 		
 		File src =((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		
-		File desti = new File ("C:\\Users\\DELL\\Downloads\\softwere testing\\automation\\Screenshot\\airindia\\airindia"+str+".jpg");
+		File desti = new File ("test-output/failedScreenshot/airindia"+str+".jpg");
 		
 		FileHandler.copy(src, desti);
 		
@@ -39,7 +39,7 @@ public class Utility {
 	
 	public static String getDataFromExel(String sheet , int row ,int cell) throws EncryptedDocumentException, IOException  {
 
-		 String path ="C:\\Users\\DELL\\OneDrive\\Desktop\\New folder\\exele1.xlsx";
+		 String path ="src/test/resources/dataFiles/ProjectTestData.xlsx";
 		  
 		 InputStream File = new FileInputStream(path);
 		 Workbook book = WorkbookFactory.create(File);

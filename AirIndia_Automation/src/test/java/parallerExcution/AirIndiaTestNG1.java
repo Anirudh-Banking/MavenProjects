@@ -17,6 +17,10 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
 import PomModule.AirIndia;
 import PomModule.ConcesionaryFare;
 import PomModule.FlightSchedule;
@@ -24,18 +28,24 @@ import PomModule.SpecialOffersAirIndia;
 import Utils.Utility;
 import base.Browser;
 
-public class AirIndiaTestNG1  extends Browser {
+public class AirIndiaTestNG1 extends Browser {
 	
 	private WebDriver driver;
 	private AirIndia airIndia;
 	private FlightSchedule flightSchedule;
 	private SpecialOffersAirIndia specialOffersAirIndia;
 	private ConcesionaryFare concesionaryFare;
-	String testID;
+	private	String testID;
 	
+	private static ExtentTest test;
+	private static ExtentHtmlReporter reporter;
 @Parameters("browser123")
 @BeforeTest
 public void launchBrowser(String browser) {
+	
+	reporter = new ExtentHtmlReporter("test-output/ExtendReport/Extent.html");
+	ExtentReports extend = new ExtentReports();
+	extend.attachReporter(reporter);
 	
 	if(browser.equals("chrome")) {
         
