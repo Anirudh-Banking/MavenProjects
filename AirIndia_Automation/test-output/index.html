@@ -114,7 +114,7 @@
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="parallerExcution.AirIndiaTestNG1" class="method navigator-link" hash-for-method="AirIndiaSearchFlight1">AirIndiaSearchFlight1</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="parallerExcution.AirIndiaTestNG2" class="method navigator-link" hash-for-method="AirIndiaExpress5">AirIndiaExpress5</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -138,7 +138,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="parallerExcution.AirIndiaTestNG2" class="method navigator-link" hash-for-method="AirIndiaExpress5">AirIndiaExpress5</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="parallerExcution.AirIndiaTestNG1" class="method navigator-link" hash-for-method="AirIndiaSearchFlight1">AirIndiaSearchFlight1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -209,14 +209,36 @@
                   <a name="AirIndiaExpress5">
                   </a> <!-- AirIndiaExpress5 -->
                   <span class="method-name">AirIndiaExpress5</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Low Cost Airline In India | Book Cheap Flight Tickets Online] but found [Air India]
-	at parallerExcution.AirIndiaTestNG2.AirIndiaExpress5(AirIndiaTestNG2.java:128)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //select[@id=&apos;departureCityDrop&apos;]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-0CO46H2&apos;, ip: &apos;192.168.43.51&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230321111920, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 14872, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fac29d3c-ee2b-4db9-89c9-72b8ba27350a
+*** Element info: {Using=xpath, value=//select[@id=&apos;departureCityDrop&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.getTagName(Unknown Source)
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:45)
+	at PomModule.LowCostAirlineInIndia.selectDepartureAiport(LowCostAirlineInIndia.java:35)
+	at parallerExcution.AirIndiaTestNG2.AirIndiaExpress5(AirIndiaTestNG2.java:114)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 22 stack frames
+... Removed 19 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -225,14 +247,76 @@
                   <a name="AirIndiaExpress5">
                   </a> <!-- AirIndiaExpress5 -->
                   <span class="method-name">AirIndiaExpress5</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Low Cost Airline In India | Book Cheap Flight Tickets Online] but found [Air India]
-	at parallerExcution.AirIndiaTestNG2.AirIndiaExpress5(AirIndiaTestNG2.java:128)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id=&apos;departureCityDrop&apos;]&quot;}
+  (Session info: MicrosoftEdge=109.0.1518.78)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-0CO46H2&apos;, ip: &apos;192.168.43.51&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2.1&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.78, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:52703}, msedge: {msedgedriverVersion: 109.0.1518.78 (4e4b32c38163..., userDataDir: C:\Users\DELL\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f3e06fbaabae602023286f67084a451c
+*** Element info: {Using=xpath, value=//select[@id=&apos;departureCityDrop&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.getTagName(Unknown Source)
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:45)
+	at PomModule.LowCostAirlineInIndia.selectDepartureAiport(LowCostAirlineInIndia.java:35)
+	at parallerExcution.AirIndiaTestNG2.AirIndiaExpress5(AirIndiaTestNG2.java:114)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 22 stack frames
+... Removed 19 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AirIndiaExpress5">
+                  </a> <!-- AirIndiaExpress5 -->
+                  <span class="method-name">AirIndiaExpress5</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//select[@id=&apos;departureCityDrop&apos;]&quot;}
+  (Session info: chrome=111.0.5563.147)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-0CO46H2&apos;, ip: &apos;192.168.43.51&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\DELL\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:52645}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a9b8d7068ece1a777dc8dc49272dc032
+*** Element info: {Using=xpath, value=//select[@id=&apos;departureCityDrop&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.getTagName(Unknown Source)
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:45)
+	at PomModule.LowCostAirlineInIndia.selectDepartureAiport(LowCostAirlineInIndia.java:35)
+	at parallerExcution.AirIndiaTestNG2.AirIndiaExpress5(AirIndiaTestNG2.java:114)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 19 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -246,52 +330,15 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="AirIndiaSearchFlight1">
-                  </a> <!-- AirIndiaSearchFlight1 -->
-                  <span class="method-name">AirIndiaSearchFlight1</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: (//a[text()=&apos;24&apos;])[1]
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-0CO46H2&apos;, ip: &apos;192.168.43.51&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 110.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230214051806, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 14996, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 5c46f272-898d-4f65-b34c-9f7c1d7c9518
-*** Element info: {Using=xpath, value=(//a[text()=&apos;24&apos;])[1]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy17.click(Unknown Source)
-	at PomModule.AirIndia.clickDeparting24Date(AirIndia.java:110)
-	at parallerExcution.AirIndiaTestNG1.AirIndiaSearchFlight1(AirIndiaTestNG1.java:92)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 19 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="FlightTimeTableCheck2">
                   </a> <!-- FlightTimeTableCheck2 -->
                   <span class="method-name">FlightTimeTableCheck2</span>
-                  <div class="stack-trace">org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: (331, -94) is out of bounds of viewport width (1280) and height (595)
+                  <div class="stack-trace">org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: (331, -218) is out of bounds of viewport width (1280) and height (595)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-0CO46H2&apos;, ip: &apos;192.168.43.51&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2.1&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 110.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230214051806, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 14996, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 5c46f272-898d-4f65-b34c-9f7c1d7c9518
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230321111920, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 2604, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1964df8e-82a7-4181-bfda-dcbf31ae4ef7
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -316,12 +363,12 @@ Session ID: 5c46f272-898d-4f65-b34c-9f7c1d7c9518
                   <a name="StudentConsessioanaryEligibility3">
                   </a> <!-- StudentConsessioanaryEligibility3 -->
                   <span class="method-name">StudentConsessioanaryEligibility3</span>
-                  <div class="stack-trace">org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: (408, -94) is out of bounds of viewport width (1280) and height (595)
+                  <div class="stack-trace">org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: (408, -218) is out of bounds of viewport width (1280) and height (595)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-0CO46H2&apos;, ip: &apos;192.168.43.51&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.2.1&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 110.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230214051806, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 14996, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 5c46f272-898d-4f65-b34c-9f7c1d7c9518
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 111.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20230321111920, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 2604, moz:profile: C:\Users\DELL\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1964df8e-82a7-4181-bfda-dcbf31ae4ef7
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -351,13 +398,6 @@ Session ID: 5c46f272-898d-4f65-b34c-9f7c1d7c9518
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="AirIndiaExpress5">
-                  </a> <!-- AirIndiaExpress5 -->
-                  <span class="method-name">AirIndiaExpress5</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="MulticityTravling4">
                   </a> <!-- MulticityTravling4 -->
                   <span class="method-name">MulticityTravling4</span>
@@ -385,6 +425,13 @@ Session ID: 5c46f272-898d-4f65-b34c-9f7c1d7c9518
               <span class="class-name">parallerExcution.AirIndiaTestNG1</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AirIndiaSearchFlight1">
+                  </a> <!-- AirIndiaSearchFlight1 -->
+                  <span class="method-name">AirIndiaSearchFlight1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="AirIndiaSearchFlight1">
@@ -438,25 +485,25 @@ Session ID: 5c46f272-898d-4f65-b34c-9f7c1d7c9518
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;6&quot; parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;extentsReport.ExtentTestNGIReporterListener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;6&quot; parallel=&quot;tests&quot; name=&quot;ChromeTest&quot;&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;ChromeTest&quot;&gt;
     &lt;parameter name=&quot;browser123&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;parallerExcution.AirIndiaTestNG1&quot;/&gt;
       &lt;class name=&quot;parallerExcution.AirIndiaTestNG2&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- ChromeTest --&gt;
-  &lt;test thread-count=&quot;6&quot; parallel=&quot;tests&quot; name=&quot;FirfoxTest&quot;&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;FirfoxTest&quot;&gt;
     &lt;parameter name=&quot;browser123&quot; value=&quot;Firefox&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;parallerExcution.AirIndiaTestNG1&quot;/&gt;
       &lt;class name=&quot;parallerExcution.AirIndiaTestNG2&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- FirfoxTest --&gt;
-  &lt;test thread-count=&quot;6&quot; parallel=&quot;tests&quot; name=&quot;EdgeTest&quot;&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;EdgeTest&quot;&gt;
     &lt;parameter name=&quot;browser123&quot; value=&quot;edge&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;parallerExcution.AirIndiaTestNG1&quot;/&gt;
@@ -510,68 +557,68 @@ data.addRows(15);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'AirIndiaExpress5')
 data.setCell(0, 2, 'parallerExcution.AirIndiaTestNG2')
-data.setCell(0, 3, 403485);
+data.setCell(0, 3, 39546);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'AirIndiaExpress5')
 data.setCell(1, 2, 'parallerExcution.AirIndiaTestNG2')
-data.setCell(1, 3, 275351);
+data.setCell(1, 3, 37029);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'AirIndiaExpress5')
 data.setCell(2, 2, 'parallerExcution.AirIndiaTestNG2')
-data.setCell(2, 3, 262039);
+data.setCell(2, 3, 34647);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'AirIndiaSearchFlight1')
-data.setCell(3, 2, 'parallerExcution.AirIndiaTestNG1')
-data.setCell(3, 3, 12630);
+data.setCell(3, 1, 'MulticityTravling4')
+data.setCell(3, 2, 'parallerExcution.AirIndiaTestNG2')
+data.setCell(3, 3, 32499);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'MulticityTravling4')
 data.setCell(4, 2, 'parallerExcution.AirIndiaTestNG2')
-data.setCell(4, 3, 11567);
+data.setCell(4, 3, 26965);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'MulticityTravling4')
-data.setCell(5, 2, 'parallerExcution.AirIndiaTestNG2')
-data.setCell(5, 3, 11476);
+data.setCell(5, 1, 'StudentConsessioanaryEligibility3')
+data.setCell(5, 2, 'parallerExcution.AirIndiaTestNG1')
+data.setCell(5, 3, 11510);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'StudentConsessioanaryEligibility3')
+data.setCell(6, 1, 'FlightTimeTableCheck2')
 data.setCell(6, 2, 'parallerExcution.AirIndiaTestNG1')
-data.setCell(6, 3, 11316);
+data.setCell(6, 3, 11358);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'FlightTimeTableCheck2')
+data.setCell(7, 1, 'StudentConsessioanaryEligibility3')
 data.setCell(7, 2, 'parallerExcution.AirIndiaTestNG1')
-data.setCell(7, 3, 10519);
+data.setCell(7, 3, 10694);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'FlightTimeTableCheck2')
 data.setCell(8, 2, 'parallerExcution.AirIndiaTestNG1')
-data.setCell(8, 3, 10079);
+data.setCell(8, 3, 9847);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'StudentConsessioanaryEligibility3')
-data.setCell(9, 2, 'parallerExcution.AirIndiaTestNG1')
-data.setCell(9, 3, 7656);
+data.setCell(9, 1, 'MulticityTravling4')
+data.setCell(9, 2, 'parallerExcution.AirIndiaTestNG2')
+data.setCell(9, 3, 7572);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'AirIndiaSearchFlight1')
 data.setCell(10, 2, 'parallerExcution.AirIndiaTestNG1')
-data.setCell(10, 3, 6442);
+data.setCell(10, 3, 7202);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'AirIndiaSearchFlight1')
 data.setCell(11, 2, 'parallerExcution.AirIndiaTestNG1')
-data.setCell(11, 3, 5694);
+data.setCell(11, 3, 7154);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'MulticityTravling4')
-data.setCell(12, 2, 'parallerExcution.AirIndiaTestNG2')
-data.setCell(12, 3, 4741);
+data.setCell(12, 1, 'AirIndiaSearchFlight1')
+data.setCell(12, 2, 'parallerExcution.AirIndiaTestNG1')
+data.setCell(12, 3, 6623);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'FlightTimeTableCheck2')
 data.setCell(13, 2, 'parallerExcution.AirIndiaTestNG1')
-data.setCell(13, 3, 35);
+data.setCell(13, 3, 55);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'StudentConsessioanaryEligibility3')
 data.setCell(14, 2, 'parallerExcution.AirIndiaTestNG1')
-data.setCell(14, 3, 19);
+data.setCell(14, 3, 20);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 minutes</span>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -599,10 +646,6 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">parallerExcution.AirIndiaTestNG1</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">launchBrowser(chrome)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-test before">
                 <span class="method-name">launchBrowser(Firefox)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
@@ -610,330 +653,334 @@ return data;
                 <span class="method-name">launchBrowser(edge)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">launchBrowser(chrome)</span>
+                <span class="method-start">2 ms</span>
+              </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">parallerExcution.AirIndiaTestNG2</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">launchBrowser(chrome)</span>
-                <span class="method-start">2895 ms</span>
+                <span class="method-start">2655 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-test before">
                 <span class="method-name">launchBrowser(edge)</span>
-                <span class="method-start">3038 ms</span>
+                <span class="method-start">4872 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">parallerExcution.AirIndiaTestNG1</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">creatPOMObject</span>
-                <span class="method-start">4409 ms</span>
+                <span class="method-start">4924 ms</span>
               </div> <!-- configuration-class before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">parallerExcution.AirIndiaTestNG2</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">launchBrowser(Firefox)</span>
-                <span class="method-start">6520 ms</span>
+                <span class="method-start">10849 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">parallerExcution.AirIndiaTestNG1</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">creatPOMObject</span>
-                <span class="method-start">6747 ms</span>
+                <span class="method-start">12218 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">creatPOMObject</span>
-                <span class="method-start">12474 ms</span>
+                <span class="method-start">18031 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">48642 ms</span>
+                <span class="method-start">69464 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">AirIndiaSearchFlight1</span>
-                <span class="method-start">48643 ms</span>
+                <span class="method-start">69466 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=AirIndiaSearchFlight1 status=SUCCESS method=AirIndiaTestNG1.AirIndiaSearchFlight1()...)</span>
-                <span class="method-start">55088 ms</span>
+                <span class="method-start">76094 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">parallerExcution.AirIndiaTestNG2</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">creatPOMObjects</span>
-                <span class="method-start">55093 ms</span>
+                <span class="method-start">76103 ms</span>
               </div> <!-- configuration-class before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">parallerExcution.AirIndiaTestNG1</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">84299 ms</span>
+                <span class="method-start">86302 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">AirIndiaSearchFlight1</span>
-                <span class="method-start">84300 ms</span>
+                <span class="method-start">86302 ms</span>
               </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AirIndiaSearchFlight1</span>
+                <span class="method-start">91646 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">91646 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=AirIndiaSearchFlight1 status=SUCCESS method=AirIndiaTestNG1.AirIndiaSearchFlight1()...)</span>
-                <span class="method-start">89996 ms</span>
+                <span class="method-start">93509 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">parallerExcution.AirIndiaTestNG2</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">creatPOMObjects</span>
-                <span class="method-start">89998 ms</span>
+                <span class="method-start">93511 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">108825 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">MulticityTravling4</span>
-                <span class="method-start">108826 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">parallerExcution.AirIndiaTestNG1</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">119667 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">AirIndiaSearchFlight1</span>
-                <span class="method-start">119667 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">parallerExcution.AirIndiaTestNG2</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=MulticityTravling4 status=SUCCESS method=AirIndiaTestNG2.MulticityTravling4()[pri:0...)</span>
-                <span class="method-start">120304 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">120383 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">AirIndiaExpress5</span>
-                <span class="method-start">120383 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">MulticityTravling4</span>
-                <span class="method-start">122846 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">122846 ms</span>
-              </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">parallerExcution.AirIndiaTestNG1</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=AirIndiaSearchFlight1 status=FAILURE method=AirIndiaTestNG1.AirIndiaSearchFlight1()...)</span>
-                <span class="method-start">132303 ms</span>
+                <span class="method-name">afterMethod([TestResult name=AirIndiaSearchFlight1 status=SUCCESS method=AirIndiaTestNG1.AirIndiaSearchFlight1()...)</span>
+                <span class="method-start">98801 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">parallerExcution.AirIndiaTestNG2</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">creatPOMObjects</span>
-                <span class="method-start">132502 ms</span>
+                <span class="method-start">98803 ms</span>
               </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">MulticityTravling4</span>
+                <span class="method-start">144287 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">144287 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=MulticityTravling4 status=SUCCESS method=AirIndiaTestNG2.MulticityTravling4()[pri:0...)</span>
-                <span class="method-start">134414 ms</span>
+                <span class="method-start">171254 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">134616 ms</span>
+                <span class="method-start">171351 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">AirIndiaExpress5</span>
-                <span class="method-start">134616 ms</span>
+                <span class="method-start">171351 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">151412 ms</span>
+                <span class="method-start">177902 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">MulticityTravling4</span>
-                <span class="method-start">151413 ms</span>
+                <span class="method-start">177902 ms</span>
               </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">MulticityTravling4</span>
+                <span class="method-start">180727 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">180727 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=MulticityTravling4 status=SUCCESS method=AirIndiaTestNG2.MulticityTravling4()[pri:0...)</span>
-                <span class="method-start">156154 ms</span>
+                <span class="method-start">188300 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">AirIndiaExpress5</span>
-                <span class="method-start">156189 ms</span>
+                <span class="method-start">188325 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">156189 ms</span>
+                <span class="method-start">188325 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=MulticityTravling4 status=SUCCESS method=AirIndiaTestNG2.MulticityTravling4()[pri:0...)</span>
+                <span class="method-start">210405 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">210718 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">AirIndiaExpress5</span>
+                <span class="method-start">210719 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=AirIndiaExpress5 status=FAILURE method=AirIndiaTestNG2.AirIndiaExpress5()[pri:1, in...)</span>
-                <span class="method-start">395736 ms</span>
+                <span class="method-start">210905 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">396231 ms</span>
+                <span class="method-start">212630 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">parallerExcution.AirIndiaTestNG1</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">396233 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">FlightTimeTableCheck2</span>
-                <span class="method-start">396234 ms</span>
+                <span class="method-start">212636 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=FlightTimeTableCheck2 status=SUCCESS method=AirIndiaTestNG1.FlightTimeTableCheck2()...)</span>
-                <span class="method-start">406315 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">406315 ms</span>
+                <span class="method-start">212636 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">StudentConsessioanaryEligibility3</span>
-                <span class="method-start">406316 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">afterClass</span>
-                <span class="method-start">417633 ms</span>
-              </div> <!-- configuration-class after -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=StudentConsessioanaryEligibility3 status=SUCCESS method=AirIndiaTestNG1.StudentCons...)</span>
-                <span class="method-start">417633 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-test after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">417634 ms</span>
-              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">parallerExcution.AirIndiaTestNG2</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">418107 ms</span>
-              </div> <!-- configuration-test after -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=AirIndiaExpress5 status=FAILURE method=AirIndiaTestNG2.AirIndiaExpress5()[pri:1, in...)</span>
-                <span class="method-start">418231 ms</span>
+                <span class="method-start">222974 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">418544 ms</span>
+                <span class="method-start">223525 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">parallerExcution.AirIndiaTestNG1</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">418546 ms</span>
+                <span class="method-start">223526 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">FlightTimeTableCheck2</span>
-                <span class="method-start">418546 ms</span>
+                <span class="method-start">223527 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=FlightTimeTableCheck2 status=FAILURE method=AirIndiaTestNG1.FlightTimeTableCheck2()...)</span>
-                <span class="method-start">418582 ms</span>
+                <span class="method-start">223584 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">418779 ms</span>
+                <span class="method-start">223840 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">StudentConsessioanaryEligibility3</span>
-                <span class="method-start">418779 ms</span>
+                <span class="method-start">223840 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=StudentConsessioanaryEligibility3 status=FAILURE method=AirIndiaTestNG1.StudentCons...)</span>
-                <span class="method-start">418800 ms</span>
+                <span class="method-start">223862 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-test after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">418986 ms</span>
-              </div> <!-- configuration-test after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=FlightTimeTableCheck2 status=SUCCESS method=AirIndiaTestNG1.FlightTimeTableCheck2()...)</span>
+                <span class="method-start">223995 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">StudentConsessioanaryEligibility3</span>
+                <span class="method-start">223998 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">223998 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">418986 ms</span>
+                <span class="method-start">224071 ms</span>
               </div> <!-- configuration-class after -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">224072 ms</span>
+              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">parallerExcution.AirIndiaTestNG2</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">421827 ms</span>
+                <span class="method-start">225564 ms</span>
               </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">parallerExcution.AirIndiaTestNG1</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=AirIndiaExpress5 status=SUCCESS method=AirIndiaTestNG2.AirIndiaExpress5()[pri:1, in...)</span>
-                <span class="method-start">538102 ms</span>
+                <span class="method-name">afterMethod([TestResult name=StudentConsessioanaryEligibility3 status=SUCCESS method=AirIndiaTestNG1.StudentCons...)</span>
+                <span class="method-start">235509 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">538112 ms</span>
+                <span class="method-start">235510 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">235510 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">parallerExcution.AirIndiaTestNG2</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">236262 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=AirIndiaExpress5 status=FAILURE method=AirIndiaTestNG2.AirIndiaExpress5()[pri:1, in...)</span>
+                <span class="method-start">247750 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">248037 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">parallerExcution.AirIndiaTestNG1</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">538114 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">FlightTimeTableCheck2</span>
-                <span class="method-start">538114 ms</span>
+                <span class="method-start">248037 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">248037 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=FlightTimeTableCheck2 status=SUCCESS method=AirIndiaTestNG1.FlightTimeTableCheck2()...)</span>
-                <span class="method-start">548634 ms</span>
+                <span class="method-start">257885 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">548634 ms</span>
+                <span class="method-start">257886 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">StudentConsessioanaryEligibility3</span>
-                <span class="method-start">548635 ms</span>
+                <span class="method-start">257886 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">afterTest</span>
-                <span class="method-start">556292 ms</span>
-              </div> <!-- configuration-test after -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod([TestResult name=StudentConsessioanaryEligibility3 status=SUCCESS method=AirIndiaTestNG1.StudentCons...)</span>
-                <span class="method-start">556292 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">556292 ms</span>
+                <span class="method-start">268581 ms</span>
               </div> <!-- configuration-class after -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=StudentConsessioanaryEligibility3 status=SUCCESS method=AirIndiaTestNG1.StudentCons...)</span>
+                <span class="method-start">268581 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">268582 ms</span>
+              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">parallerExcution.AirIndiaTestNG2</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">556673 ms</span>
+                <span class="method-start">268970 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
